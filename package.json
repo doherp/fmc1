@@ -12,7 +12,7 @@
     "pdserve": "nodemon index.js"
   },
   "engines": {
-    "node": "8"
+    "node": "10"
   },
   "main": "index.js",
   "dependencies": {

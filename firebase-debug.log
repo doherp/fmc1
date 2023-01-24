@@ -1,0 +1,116 @@
+[debug] [2020-10-17T07:57:12.973Z] ----------------------------------------------------------------------
+[debug] [2020-10-17T07:57:12.977Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2020-10-17T07:57:12.977Z] CLI Version:   8.9.2
+[debug] [2020-10-17T07:57:12.977Z] Platform:      win32
+[debug] [2020-10-17T07:57:12.977Z] Node Version:  v12.18.4
+[debug] [2020-10-17T07:57:12.980Z] Time:          Sat Oct 17 2020 08:57:12 GMT+0100 (British Summer Time)
+[debug] [2020-10-17T07:57:12.980Z] ----------------------------------------------------------------------
+[debug] [2020-10-17T07:57:12.981Z] 
+[debug] [2020-10-17T07:57:13.010Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-17T07:57:13.011Z] > authorizing via signed-in user
+[debug] [2020-10-17T07:57:13.012Z] [iam] checking project coursedirectoryv2-qpyb for permissions ["firebase.projects.get"]
+[debug] [2020-10-17T07:57:13.016Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-10-17T07:57:13.017Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-10-17T07:57:13.205Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 17 Oct 2020 07:57:13 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-17T07:57:13.219Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/coursedirectoryv2-qpyb:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-10-17T07:57:13.897Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 17 Oct 2020 07:57:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=552","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] !  Your requested "node" version "8" doesn't match your global version "12" {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"8\" doesn't match your global version \"12\""}}
+[debug] [2020-10-17T07:57:14.924Z] defaultcredentials: writing to file C:\Users\Administrator\AppData\Roaming\firebase\pdscwork_gmail_com_application_default_credentials.json
+[debug] [2020-10-17T07:57:14.943Z] DEBUG: Setting GAC to C:\Users\Administrator\AppData\Roaming\firebase\pdscwork_gmail_com_application_default_credentials.json
+[debug] [2020-10-17T07:57:14.964Z] [functions] Watching "C:\Dev\cbots\CourseDirectoryV2\functions" for Cloud Functions...
+[debug] [2020-10-17T07:57:14.993Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-10-17T07:57:14.994Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-10-17T07:57:14.996Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-10-17T07:57:14.996Z] DEBUG: [worker-~diagnostic~-0134bea2-ecfa-41c8-b579-94881cc95045]: Assigning socketPath: \\?\pipe\C:\Dev\cbots\CourseDirectoryV2\functions\8068
+[debug] [2020-10-17T07:57:14.997Z] DEBUG: [worker-~diagnostic~-0134bea2-ecfa-41c8-b579-94881cc95045]: BUSY
+[debug] [2020-10-17T07:57:15.901Z] DEBUG: [runtime-status] [8068] Functions runtime initialized. {"cwd":"C:\\Dev\\cbots\\CourseDirectoryV2\\functions","node_version":"12.18.4"}
+[debug] [2020-10-17T07:57:15.915Z] DEBUG: [runtime-status] [8068] Disabled runtime features: undefined
+[debug] [2020-10-17T07:57:15.939Z] DEBUG: [runtime-status] [8068] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"C:\\Dev\\cbots\\CourseDirectoryV2\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-10-17T07:57:15.942Z] DEBUG: [runtime-status] [8068] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Dev\\cbots\\CourseDirectoryV2\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-10-17T07:57:15.946Z] DEBUG: [runtime-status] [8068] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Dev\\cbots\\CourseDirectoryV2\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-10-17T07:57:15.948Z] DEBUG: [runtime-status] [8068] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-10-17T07:57:15.949Z] DEBUG: [runtime-status] [8068] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Dev\\cbots\\CourseDirectoryV2\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-10-17T07:57:16.042Z] DEBUG: [runtime-status] [8068] Checked functions.config() {"config":{}}
+[debug] [2020-10-17T07:57:16.042Z] DEBUG: [runtime-status] [8068] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Dev\\cbots\\CourseDirectoryV2\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-10-17T07:57:16.043Z] DEBUG: [runtime-status] [8068] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Dev\\cbots\\CourseDirectoryV2\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-10-17T07:57:16.045Z] DEBUG: [runtime-status] [8068] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"C:\\Dev\\cbots\\CourseDirectoryV2\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-10-17T07:57:16.046Z] DEBUG: [runtime-status] [8068] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Dev\\cbots\\CourseDirectoryV2\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-10-17T07:57:16.047Z] DEBUG: [runtime-status] [8068] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.13.0","resolution":"C:\\Dev\\cbots\\CourseDirectoryV2\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  ReferenceError: Parse is not defined
+    at Object.<anonymous> (C:\Dev\cbots\CourseDirectoryV2\functions\index.js:10:1)
+    at Module._compile (internal/modules/cjs/loader.js:1137:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+    at Module.load (internal/modules/cjs/loader.js:985:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+    at Module.require (internal/modules/cjs/loader.js:1025:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:681:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:5:58) {"metadata":{"emulator":{"name":"functions"},"message":"ReferenceError: Parse is not defined\n    at Object.<anonymous> (C:\\Dev\\cbots\\CourseDirectoryV2\\functions\\index.js:10:1)\n    at Module._compile (internal/modules/cjs/loader.js:1137:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)\n    at Module.load (internal/modules/cjs/loader.js:985:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:878:14)\n    at Module.require (internal/modules/cjs/loader.js:1025:19)\n    at require (internal/modules/cjs/helpers.js:72:18)\n    at C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:681:33\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:5:58)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-10-17T07:57:17.820Z] DEBUG: [worker-~diagnostic~-0134bea2-ecfa-41c8-b579-94881cc95045]: exited
+[debug] [2020-10-17T07:57:17.822Z] DEBUG: [worker-~diagnostic~-0134bea2-ecfa-41c8-b579-94881cc95045]: FINISHED
+[debug] [2020-10-17T07:57:53.348Z] DEBUG: File C:\Dev\cbots\CourseDirectoryV2\functions\index.js changed, reloading triggers
+[debug] [2020-10-17T07:57:54.351Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-10-17T07:57:54.381Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-10-17T07:57:54.381Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-10-17T07:57:54.381Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-10-17T07:57:54.381Z] DEBUG: [worker-~diagnostic~-2334bcdd-cb38-42fb-9cbd-5644e354f6a8]: Assigning socketPath: \\?\pipe\C:\Dev\cbots\CourseDirectoryV2\functions\4088
+[debug] [2020-10-17T07:57:54.381Z] DEBUG: [worker-~diagnostic~-2334bcdd-cb38-42fb-9cbd-5644e354f6a8]: BUSY
+[debug] [2020-10-17T07:57:55.637Z] DEBUG: [runtime-status] [4088] Functions runtime initialized. {"cwd":"C:\\Dev\\cbots\\CourseDirectoryV2\\functions","node_version":"12.18.4"}
+[debug] [2020-10-17T07:57:55.656Z] DEBUG: [runtime-status] [4088] Disabled runtime features: undefined
+[debug] [2020-10-17T07:57:55.667Z] DEBUG: [runtime-status] [4088] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"C:\\Dev\\cbots\\CourseDirectoryV2\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-10-17T07:57:55.683Z] DEBUG: [runtime-status] [4088] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Dev\\cbots\\CourseDirectoryV2\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-10-17T07:57:55.698Z] DEBUG: [runtime-status] [4088] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Dev\\cbots\\CourseDirectoryV2\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-10-17T07:57:55.702Z] DEBUG: [runtime-status] [4088] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-10-17T07:57:55.703Z] DEBUG: [runtime-status] [4088] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Dev\\cbots\\CourseDirectoryV2\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-10-17T07:57:55.799Z] DEBUG: [runtime-status] [4088] Checked functions.config() {"config":{}}
+[debug] [2020-10-17T07:57:55.800Z] DEBUG: [runtime-status] [4088] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Dev\\cbots\\CourseDirectoryV2\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-10-17T07:57:55.800Z] DEBUG: [runtime-status] [4088] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Dev\\cbots\\CourseDirectoryV2\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-10-17T07:57:55.804Z] DEBUG: [runtime-status] [4088] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"C:\\Dev\\cbots\\CourseDirectoryV2\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-10-17T07:57:55.805Z] DEBUG: [runtime-status] [4088] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Dev\\cbots\\CourseDirectoryV2\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-10-17T07:57:55.806Z] DEBUG: [runtime-status] [4088] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.13.0","resolution":"C:\\Dev\\cbots\\CourseDirectoryV2\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2020-10-17T07:58:10.200Z] ----------------------------------------------------------------------
+[debug] [2020-10-17T07:58:10.205Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2020-10-17T07:58:10.207Z] CLI Version:   8.9.2
+[debug] [2020-10-17T07:58:10.207Z] Platform:      win32
+[debug] [2020-10-17T07:58:10.207Z] Node Version:  v12.18.4
+[debug] [2020-10-17T07:58:10.210Z] Time:          Sat Oct 17 2020 08:58:10 GMT+0100 (British Summer Time)
+[debug] [2020-10-17T07:58:10.210Z] ----------------------------------------------------------------------
+[debug] [2020-10-17T07:58:10.210Z] 
+[debug] [2020-10-17T07:58:10.229Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-17T07:58:10.231Z] > authorizing via signed-in user
+[debug] [2020-10-17T07:58:10.231Z] [iam] checking project coursedirectoryv2-qpyb for permissions ["firebase.projects.get"]
+[debug] [2020-10-17T07:58:10.237Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/coursedirectoryv2-qpyb:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-10-17T07:58:10.925Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 17 Oct 2020 07:58:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=555","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] !  Your requested "node" version "8" doesn't match your global version "12" {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"8\" doesn't match your global version \"12\""}}
+[debug] [2020-10-17T07:58:11.957Z] defaultcredentials: writing to file C:\Users\Administrator\AppData\Roaming\firebase\pdscwork_gmail_com_application_default_credentials.json
+[debug] [2020-10-17T07:58:11.962Z] DEBUG: Setting GAC to C:\Users\Administrator\AppData\Roaming\firebase\pdscwork_gmail_com_application_default_credentials.json
+[debug] [2020-10-17T07:58:12.488Z] [functions] Watching "C:\Dev\cbots\CourseDirectoryV2\functions" for Cloud Functions...
+[debug] [2020-10-17T07:58:12.517Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-10-17T07:58:12.517Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-10-17T07:58:12.518Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-10-17T07:58:12.519Z] DEBUG: [worker-~diagnostic~-49c9dafd-4ad5-4f94-8ffc-b4de9a548573]: Assigning socketPath: \\?\pipe\C:\Dev\cbots\CourseDirectoryV2\functions\3148
+[debug] [2020-10-17T07:58:12.519Z] DEBUG: [worker-~diagnostic~-49c9dafd-4ad5-4f94-8ffc-b4de9a548573]: BUSY
+[debug] [2020-10-17T07:58:13.379Z] DEBUG: [runtime-status] [3148] Functions runtime initialized. {"cwd":"C:\\Dev\\cbots\\CourseDirectoryV2\\functions","node_version":"12.18.4"}
+[debug] [2020-10-17T07:58:13.380Z] DEBUG: [runtime-status] [3148] Disabled runtime features: undefined
+[debug] [2020-10-17T07:58:13.383Z] DEBUG: [runtime-status] [3148] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"C:\\Dev\\cbots\\CourseDirectoryV2\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-10-17T07:58:13.390Z] DEBUG: [runtime-status] [3148] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Dev\\cbots\\CourseDirectoryV2\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-10-17T07:58:13.394Z] DEBUG: [runtime-status] [3148] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Dev\\cbots\\CourseDirectoryV2\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-10-17T07:58:13.400Z] DEBUG: [runtime-status] [3148] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-10-17T07:58:13.403Z] DEBUG: [runtime-status] [3148] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Dev\\cbots\\CourseDirectoryV2\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-10-17T07:58:13.522Z] DEBUG: [runtime-status] [3148] Checked functions.config() {"config":{}}
+[debug] [2020-10-17T07:58:13.525Z] DEBUG: [runtime-status] [3148] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Dev\\cbots\\CourseDirectoryV2\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2020-10-17T07:58:13.525Z] DEBUG: [runtime-status] [3148] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Dev\\cbots\\CourseDirectoryV2\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-10-17T07:58:13.528Z] DEBUG: [runtime-status] [3148] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"C:\\Dev\\cbots\\CourseDirectoryV2\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-10-17T07:58:13.533Z] DEBUG: [runtime-status] [3148] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"C:\\Dev\\cbots\\CourseDirectoryV2\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-10-17T07:58:13.534Z] DEBUG: [runtime-status] [3148] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.13.0","resolution":"C:\\Dev\\cbots\\CourseDirectoryV2\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2020-10-17T07:58:15.116Z] DEBUG: [runtime-status] [3148] initializeApp(DEFAULT) {"databaseURL":"https://coursedirectoryv2-qpyb.firebaseio.com","storageBucket":"coursedirectoryv2-qpyb.appspot.com","projectId":"coursedirectoryv2-qpyb"}
+[warn] !  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production. {"metadata":{"emulator":{"name":"functions"},"message":"The Cloud Firestore emulator is not running, so calls to Firestore will affect production."}}
+[debug] [2020-10-17T07:58:15.744Z] [functions[dialogflowFirebaseFulfillment]] http function initialized (http://localhost:5000/coursedirectoryv2-qpyb/us-central1/dialogflowFirebaseFulfillment).
+[info] i  functions: Loaded functions: dialogflowFirebaseFulfillment 
+[warn] !  functions: The following emulators are not running, calls to these services will affect production: firestore, database, pubsub 
+[debug] [2020-10-17T07:58:15.782Z] DEBUG: [worker-~diagnostic~-49c9dafd-4ad5-4f94-8ffc-b4de9a548573]: IDLE
